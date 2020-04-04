@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import axios from "axios";
-
+import './Index.css'
 
 
 
@@ -33,15 +33,16 @@ class Index extends Component{
 
     render() {
         const {data, error} = this.state
-
+const myStyle = {backgroundColor: "lightblue"}
 
         return (
-            <>
+            <div>
 
-                <h1 style={{backgroundColor: "lightblue"}}>{data.message} !!</h1>
+                <h1 style={myStyle}>{data.message} !!</h1>
 
 
-            </>
+
+            </div>
         );
     }
 }

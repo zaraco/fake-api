@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d12b8879-de5f-4c75-90f7-bdad1408788a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Component/Index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/NotFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585989890593</updated>
-      <workItem from="1585989893597" duration="17281000" />
+      <workItem from="1585989893597" duration="21302000" />
     </task>
     <servers />
   </component>
@@ -73,25 +75,29 @@
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="178" y="105" key="#ESLint/0.23.1440.831@0.23.1440.831" timestamp="1586012882279" />
-    <state width="1000" height="215" key="GridCell.Tab.0.bottom" timestamp="1586015995510">
+    <state x="341" y="193" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586022245105">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="341" y="193" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.831@0.23.1440.831" timestamp="1586022245105" />
+    <state width="1000" height="215" key="GridCell.Tab.0.bottom" timestamp="1586023900746">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586012084993" />
-    <state width="1000" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1586015995510" />
-    <state width="1000" height="215" key="GridCell.Tab.0.center" timestamp="1586015995508">
+    <state width="1000" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1586023900746" />
+    <state width="1000" height="215" key="GridCell.Tab.0.center" timestamp="1586023900745">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586012084992" />
-    <state width="1000" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1586015995508" />
-    <state width="1000" height="215" key="GridCell.Tab.0.left" timestamp="1586015995508">
+    <state width="1000" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1586023900745" />
+    <state width="1000" height="215" key="GridCell.Tab.0.left" timestamp="1586023900744">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586012084991" />
-    <state width="1000" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1586015995508" />
-    <state width="1000" height="215" key="GridCell.Tab.0.right" timestamp="1586015995509">
+    <state width="1000" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1586023900744" />
+    <state width="1000" height="215" key="GridCell.Tab.0.right" timestamp="1586023900745">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586012084992" />
-    <state width="1000" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1586015995509" />
+    <state width="1000" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1586023900745" />
   </component>
 </project>
