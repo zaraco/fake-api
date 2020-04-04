@@ -34,37 +34,48 @@ class Users extends Component {
 
 
     render() {
-        let u = this.state.users.length ? this.state.users.map((user) =>
+        if (this.state.error !== '') {
+            return (
+                <>
+                    <Alert variant='danger'>
+                        {this.state.error}
+                    </Alert>
+                </>
+            )
+        } else {
 
-            <tr>
-                <td>{user.name}</td>
-                <td>{user.age}</td>
-                <td>{user.isMarried.toString()}</td>
-            </tr>
-        ) : <p>There is no user</p>
+            let u = this.state.users.length ? this.state.users.map((user) =>
 
-        return (
-            <>
-                <Alert  variant='primary'>
-                    {this.state.message}
-                </Alert>
+                <tr>
+                    <td>{user.name}</td>
+                    <td>{user.age}</td>
+                    <td>{user.isMarried.toString()}</td>
+                </tr>
+            ) : <p>There is no user</p>
 
-                <Table striped bordered hover variant="dark">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>isMarried</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {u}
-                    </tbody>
-                </Table>
+            return (
+                <>
+                    <Alert variant='primary'>
+                        {this.state.message}
+                    </Alert>
+
+                    <Table striped bordered hover variant="dark">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>isMarried</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {u}
+                        </tbody>
+                    </Table>
 
 
-            </>
-        );
+                </>
+            );
+        }
     }
 }
 

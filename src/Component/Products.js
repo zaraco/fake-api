@@ -4,7 +4,7 @@ import {Table} from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
 
 
-class Products extends Component{
+class Products extends Component {
     constructor() {
         super();
         this.state = {
@@ -14,6 +14,7 @@ class Products extends Component{
         }
 
     }
+
     componentDidMount() {
         axios.get('https://arman.co.com/fake-api/products.php')
             .then(response => {
@@ -24,7 +25,7 @@ class Products extends Component{
             })
             .catch(error => {
                 this.setState({
-                    error: 'There is an error'
+                    error: error
                 })
 
             })
@@ -34,35 +35,46 @@ class Products extends Component{
 
     render() {
         const {message, products, error} = this.state
-       let p = products.length ? products.map((product)=>
-           <tr>
-               <td>{product.name}</td>
-               <td>{product.amount}</td>
-               <td>{product.price}</td>
-           </tr>
-       ) : <p>There is no products</p>
-        return (
-            <>
-                <Alert  variant='success'>
-                    {message}
-                </Alert>
+        if (error !== '') {
+            return (
+                <>
+                    <Alert variant='danger'>
+                        {error}
+                    </Alert>
+                </>
+            )
+        } else {
 
-                <Table striped bordered hover variant="dark">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Amount</th>
-                        <th>Price</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {p}
-                    </tbody>
-                </Table>
+            let p = products.length ? products.map((product) =>
+                <tr>
+                    <td>{product.name}</td>
+                    <td>{product.amount}</td>
+                    <td>{product.price}</td>
+                </tr>
+            ) : <p>There is no products</p>
+            return (
+                <>
+                    <Alert variant='success'>
+                        {message}
+                    </Alert>
+
+                    <Table striped bordered hover variant="dark">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {p}
+                        </tbody>
+                    </Table>
 
 
-            </>
-        );
+                </>
+            );
+        }
     }
 }
 
