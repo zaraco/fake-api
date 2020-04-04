@@ -32,7 +32,7 @@ class Users extends Component {
 
 
     render() {
-        let u = this.state.users.length ? this.state.users.map((user)=> <p key={user.id}>{user.name} - {user.age} - {user.isMarried.toString()}</p>) : <p>There is no user</p>
+        let u = this.state.users.length ? this.state.users.map((user)=> <p>{user.name} - {user.age} - {user.isMarried.toString()}</p>) : <p>There is no user</p>
         return (
             <>
 
