@@ -2,6 +2,9 @@ import React, {Component} from "react";
 import axios from "axios";
 
 
+
+
+
 class Index extends Component{
     constructor() {
         super();
@@ -30,10 +33,14 @@ class Index extends Component{
 
     render() {
         const {data, error} = this.state
+
+
         return (
             <>
 
-                {data.message}
+                <h1 style={{backgroundColor: "lightblue"}}>{data.message} !!</h1>
+
+
             </>
         );
     }

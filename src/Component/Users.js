@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import axios from "axios";
+import {Table} from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
 
 
 class Users extends Component {
@@ -32,12 +34,35 @@ class Users extends Component {
 
 
     render() {
-        let u = this.state.users.length ? this.state.users.map((user)=> <p>{user.name} - {user.age} - {user.isMarried.toString()}</p>) : <p>There is no user</p>
+        let u = this.state.users.length ? this.state.users.map((user) =>
+
+            <tr>
+                <td>{user.name}</td>
+                <td>{user.age}</td>
+                <td>{user.isMarried.toString()}</td>
+            </tr>
+        ) : <p>There is no user</p>
+
         return (
             <>
+                <Alert  variant='primary'>
+                    {this.state.message}
+                </Alert>
 
-                {this.state.message}
-                {u}
+                <Table striped bordered hover variant="dark">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>isMarried</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {u}
+                    </tbody>
+                </Table>
+
+
             </>
         );
     }

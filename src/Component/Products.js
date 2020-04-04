@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import axios from "axios";
+import {Table} from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
 
 
 class Products extends Component{
@@ -32,12 +34,33 @@ class Products extends Component{
 
     render() {
         const {message, products, error} = this.state
-       let p = products.length ? products.map((product)=> <p>{product.name} - {product.amount} - {product.price}</p>) : <p>There is no products</p>
+       let p = products.length ? products.map((product)=>
+           <tr>
+               <td>{product.name}</td>
+               <td>{product.amount}</td>
+               <td>{product.price}</td>
+           </tr>
+       ) : <p>There is no products</p>
         return (
             <>
+                <Alert  variant='success'>
+                    {message}
+                </Alert>
 
-                {message}
-                {p}
+                <Table striped bordered hover variant="dark">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {p}
+                    </tbody>
+                </Table>
+
+
             </>
         );
     }

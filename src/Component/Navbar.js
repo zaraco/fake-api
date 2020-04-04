@@ -1,13 +1,14 @@
 import React, {Component} from "react";
 import {Nav, NavItem, NavLink} from 'react-bootstrap';
 
-class Boostrap extends Component {
+class Navbar extends Component {
 
 
     render() {
         return (
-            <div>
-                <Nav>
+            <>
+
+                <Nav variant="pills">
                     <NavItem>
                         <NavLink href="/">Index</NavLink>
                     </NavItem>
@@ -18,10 +19,10 @@ class Boostrap extends Component {
                         <NavLink href="/users" >Users</NavLink>
                     </NavItem>
                 </Nav>
-            </div>
+            </>
 
         );
     }
 }
 
-export default Boostrap;
+export default Navbar;
